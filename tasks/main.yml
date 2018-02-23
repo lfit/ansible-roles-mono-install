@@ -1,2 +1,4 @@
 ---
-# tasks file for mono-install
+- include_tasks: '{{item}}'
+  with_first_found:
+    - '{{ansible_os_family}}.yml'

@@ -1,0 +1,9 @@
+---
+- name: Install mono-complete and nuget
+  apt:
+    name:
+      - mono-complete
+      - nuget
+    state: present
+    update_cache: true
+  become: true
