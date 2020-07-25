@@ -1,4 +1,5 @@
 # UUID                                                                                   	Group Name
 #
+5edead501f85fdb0e4a9b4a839c889b07c677be5                                                 	saml/lf-gerrit-ansible-roles-mono-install-committers
 d68d00a2419f8ff627fc120cf9dd9055ae422153                                                 	GitHub Replication
 ldap:cn=lf-gerrit-ansible-roles-mono-install-committers,ou=Groups,dc=freestandards,dc=org	ldap/lf-gerrit-ansible-roles-mono-install-committers
