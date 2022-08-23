@@ -1,6 +1,6 @@
 ---
 - name: Install mono-complete and nuget
-  apt:
+  ansible.builtin.package:
     name:
       - mono-complete
       - nuget
