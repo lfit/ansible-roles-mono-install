@@ -1,5 +1,7 @@
 ---
 galaxy_info:
+  namespace: lfit
+  role_name: mono_install
   author: Linux Foundation Release Engineering
   description: Install mono project. (http://www.mono-project.com/)
   company: The Linux Foundation
@@ -13,9 +15,12 @@ galaxy_info:
     - name: EL
       versions:
         - 7
+
     - name: Ubuntu
       versions:
-        - xenial
+        - bionic
+        - focal
+        - jammy
 
   galaxy_tags:
     - mono
