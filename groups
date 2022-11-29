@@ -1,4 +1,5 @@
-# UUID                                                                                   	Group Name
+# UUID                                  	Group Name
 #
-5edead501f85fdb0e4a9b4a839c889b07c677be5                                                 	saml/lf-gerrit-ansible-roles-mono-install-committers
-d68d00a2419f8ff627fc120cf9dd9055ae422153                                                 	GitHub Replication
+5edead501f85fdb0e4a9b4a839c889b07c677be5	saml/lf-gerrit-ansible-roles-mono-install-committers
+824623e509ec71c6574dad386e59e709eaedd178	Gitlab Replication
+d68d00a2419f8ff627fc120cf9dd9055ae422153	GitHub Replication
