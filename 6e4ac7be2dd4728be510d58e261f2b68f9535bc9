@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a526d084_8104414e",
+        "filename": "molecule/default/molecule.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2024-02-09T19:35:38Z",
+      "side": 1,
+      "message": "No centos8? Or 9? Also, we\u0027re testing on 22.04, but \"jammy\" is not listed in meta/main.yml.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 19
+      },
+      "revId": "6e4ac7be2dd4728be510d58e261f2b68f9535bc9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    }
+  ]
+}
