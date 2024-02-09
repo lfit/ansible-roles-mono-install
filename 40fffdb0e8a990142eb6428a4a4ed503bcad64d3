@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "80cddca8_6bfaf3af",
+        "filename": "meta/main.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2024-02-09T23:32:15Z",
+      "side": 1,
+      "message": "\"jammy\"",
+      "range": {
+        "startLine": 23,
+        "startChar": 10,
+        "endLine": 23,
+        "endChar": 15
+      },
+      "revId": "40fffdb0e8a990142eb6428a4a4ed503bcad64d3",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    }
+  ]
+}
