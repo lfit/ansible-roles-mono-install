@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eb5eebd6_59035e85",
+        "filename": ".github/workflows/gerrit-verify.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2024-02-09T23:10:52Z",
+      "side": 1,
+      "message": "We should bump this up to v0.6. Since at least one other ansible role has this updated already, I don\u0027t think there\u0027s any reason to use the old version here. Sorry to continue harping on this!",
+      "range": {
+        "startLine": 87,
+        "startChar": 49,
+        "endLine": 87,
+        "endChar": 53
+      },
+      "revId": "74752f2d77feceec0c8d155f4e1b495965b726ef",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    }
+  ]
+}
