@@ -22,6 +22,30 @@
       },
       "revId": "6e4ac7be2dd4728be510d58e261f2b68f9535bc9",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4b3fe4e0_848b4d0f",
+        "filename": "molecule/default/molecule.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2024-02-09T22:48:38Z",
+      "side": 1,
+      "message": "No one is using this role presentlym, repo might get archived soon.",
+      "parentUuid": "a526d084_8104414e",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 19
+      },
+      "revId": "6e4ac7be2dd4728be510d58e261f2b68f9535bc9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     }
   ]
 }
