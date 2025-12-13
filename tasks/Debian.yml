@@ -3,7 +3,17 @@
   ansible.builtin.package:
     name:
       - mono-complete
-      - nuget
+      - "{{ 'nuget' if ansible_facts.distribution_version is version('24.04', '<') else omit }}"
     state: present
     update_cache: true
   become: true
+  when: ansible_facts.distribution_version is version('24.04', '<')
+
+- name: Install mono-complete only (Ubuntu 24.04+)
+  ansible.builtin.package:
+    name:
+      - mono-complete
+    state: present
+    update_cache: true
+  become: true
+  when: ansible_facts.distribution_version is version('24.04', '>=')

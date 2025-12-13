@@ -1,5 +1,5 @@
 ---
-- name: Include tasks from '{{ ansible_os_family }}'
+- name: Include tasks from '{{ ansible_facts.os_family }}'
   ansible.builtin.include_tasks: '{{ item }}'
   with_first_found:
-    - '{{ ansible_os_family }}.yml'
+    - '{{ ansible_facts.os_family }}.yml'

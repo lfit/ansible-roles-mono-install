@@ -1,25 +1,47 @@
 ---
-- name: Add Mono RPM Key
+- name: Add Mono RPM Key (CentOS <= 8)
   ansible.builtin.rpm_key:
     key: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
     state: present
   become: true
+  when: ansible_facts.distribution_major_version is version('9', '<')
+  ignore_errors: true
 
 - name: Add Mono repository
   ansible.builtin.yum_repository:
     name: mono-project
     description: Mono Project CentOS repository
-    baseurl: http://download.mono-project.com/repo/centos
+    baseurl: http://download.mono-project.com/repo/centos{{ ansible_facts.distribution_major_version }}
     enabled: true
+    gpgcheck: false
     repo_gpgcheck: false
     skip_if_unavailable: true
   become: true
 
-- name: Install mono-complete and nuget
-  ansible.builtin.yum:
+- name: Install mono-complete and nuget (CentOS <= 8)
+  ansible.builtin.dnf:
     name:
       - mono-complete
       - nuget
     state: present
     update_cache: true
   become: true
+  when: ansible_facts.distribution_major_version is version('9', '<')
+
+- name: Install mono-complete only (CentOS 9+)
+  ansible.builtin.dnf:
+    name:
+      - mono-complete
+    state: present
+    update_cache: true
+  become: true
+  when: ansible_facts.distribution_major_version is version('9', '>=')
+  ignore_errors: true
+  register: mono_install_centos9
+
+- name: Warn about Mono availability on CentOS 9+
+  ansible.builtin.debug:
+    msg: "WARNING: Mono may not be available for CentOS Stream 9. Mono project may not have official support yet."
+  when:
+    - ansible_facts.distribution_major_version is version('9', '>=')
+    - mono_install_centos9 is failed
