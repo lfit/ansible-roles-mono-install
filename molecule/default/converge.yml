@@ -3,4 +3,6 @@
   hosts: all
   gather_facts: true
   roles:
-    - role: "{{ lookup('env', 'MOLECULE_PROJECT_DIRECTORY') | basename }}"
+    # Absolute path so the role resolves regardless of ANSIBLE_ROLES_PATH;
+    # the mirror runs master's workflow env, which may not point at the parent.
+    - role: "{{ lookup('env', 'MOLECULE_PROJECT_DIRECTORY') }}"
