@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1912e2e4_92cbd835",
+        "filename": "meta/main.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2026-07-31T01:12:57Z",
+      "side": 1,
+      "message": "Should this include 9 as well?",
+      "revId": "8c410422fc758cd5eabb411534916fc1a788766f",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    }
+  ]
+}
