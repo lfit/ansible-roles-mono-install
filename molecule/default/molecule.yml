@@ -10,6 +10,9 @@ platforms:
   - name: ubuntu2404
     image: ubuntu:24.04
     pre_build_image: false
+  - name: centos9
+    image: quay.io/centos/centos:stream9
+    pre_build_image: false
 provisioner:
   name: ansible
   config_options:
@@ -20,6 +23,8 @@ provisioner:
       ubuntu2204:
         ansible_python_interpreter: /usr/bin/python3
       ubuntu2404:
+        ansible_python_interpreter: /usr/bin/python3
+      centos9:
         ansible_python_interpreter: /usr/bin/python3
 scenario:
   name: default
