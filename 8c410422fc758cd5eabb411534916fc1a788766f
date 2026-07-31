@@ -16,6 +16,24 @@
       "message": "Should this include 9 as well?",
       "revId": "8c410422fc758cd5eabb411534916fc1a788766f",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c3a28f6_27f2044a",
+        "filename": "meta/main.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2026-07-31T03:37:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1912e2e4_92cbd835",
+      "revId": "8c410422fc758cd5eabb411534916fc1a788766f",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     }
   ]
 }
